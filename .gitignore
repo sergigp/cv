@@ -1,0 +1,8 @@
+# RenderCV output
+rendercv_output/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
