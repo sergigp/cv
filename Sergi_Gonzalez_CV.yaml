@@ -1,7 +1,7 @@
 cv:
   name: Sergi Gonzalez
   headline: Senior Backend Engineer · Team Lead
-  location: Barcelona, Spain (CET) · EU citizen · Remote
+  location: Barcelona, Spain · EU citizen
   email: sergigp85@gmail.com
   social_networks:
     - network: LinkedIn
@@ -12,11 +12,12 @@ cv:
     summary:
       - Product-minded backend engineer and team lead with 15+ years building
         distributed systems for startups and scale-ups, remote since 2018.
-        Grew two teams from 1 to 6 and 1 to 10 engineers, built a chat platform
-        serving 100K+ concurrent users at Letgo, co-founded a startup, and owned
-        the dashboards product at observability SaaS Coralogix.
-        Works spec-first with AI coding agents (Claude Code, OpenSpec).
-        Looking for senior backend or team lead roles from January 2027.
+        Believes that software architecture and tools depend on context and product strategy.
+        Grew two teams from scratch, to 6 and 8 engineers, built a chat platform serving 130K+
+        concurrent users at Letgo, co-founded a startup, and led an
+        international team at observability SaaS Coralogix.
+        Works spec-first with AI coding agents.
+        Looking for remote senior backend or team lead roles from January 2027.
     skills:
       - label: Languages
         details: Rust, Scala, TypeScript
@@ -37,58 +38,107 @@ cv:
         end_date: present
         highlights:
           - Planned break after Coralogix, including parental leave.
-          - Since August 2026, building [what] in [stack] with Claude Code and a
-            spec-driven workflow (OpenSpec). [repo link]
+          - Built [Yarrtube](https://github.com/sergigp/yarrtube), an open-source
+            self-hosted YouTube synchronizer (Rust, React, TypeScript), spec-first
+            with Claude Code and OpenSpec. 140+ GitHub stars.
+          - Currently building [Superthree](https://github.com/sergigp/superthree),
+            a self-hosted broadcast-style TV channel for kids, where parents
+            schedule the shows and the TV plays what's on (TypeScript).
       - company: Coralogix
-        position: Software Engineer
+        position: Software Engineer, Data Usage Team
         start_date: 2025-05
         end_date: 2025-12
         location: Remote
-        summary: TBD
+        summary: B2B observability SaaS that grew from about 100 to 500+
+          employees between 2022 and 2025. Moved to the team that meters each
+          customer's platform usage and enforces quotas.
         highlights:
-          - TBD
+          - Helped replace the legacy JavaScript quota blocker with a new Rust
+            service that warns customers approaching their quota and blocks
+            ingestion within minutes of them exceeding it.
+          - Added blocking rules per data type (logs, metrics, traces) and
+            quota sharing, so one data type can draw on another's allowance.
+          - Built customer-facing usage dashboards on usage data aggregated
+            from Kafka into ClickHouse.
       - company: Coralogix
-        position: Team Lead
+        position: Team Lead, Dashboards Team
         start_date: 2022-04
         end_date: 2025-05
         location: Remote
-        summary: Observability SaaS. Led the team building the home dashboard and custom dashboards, a Grafana-like product.
+        summary: Promoted after one month to found and lead the dashboards
+          team, acting as its engineering manager.
         highlights:
-          - Grew the dashboards team from 1 to 6 engineers.
-          - Main contributor to the team's backend services (Scala) and infrastructure (Kubernetes), with hands-on work in the Angular frontend.
-          - Ran the team with shared ownership across the stack, so frontend engineers also shipped backend changes. [one concrete result]
+          - Built custom dashboards, a Grafana-like product that became the
+            platform's native alternative to Grafana for customers and replaced
+            it company-wide for internal service monitoring.
+          - Grew the team from 1 to 6 engineers, mostly frontend (Angular),
+            owning hiring and performance management.
+          - Delivered the home dashboard, the platform's landing page, and
+            took over Explore, the log exploration page with the most traffic
+            in the product.
+          - Introduced end-to-end testing with Playwright, the first frontend
+            team at the company to do so. Other teams followed.
+          - Main contributor to the team's backend services (Scala) and
+            infrastructure (Kubernetes), with hands-on work in the Angular
+            frontend.
       - company: Cassette
         position: Co-Founder
         start_date: 2020-11
-        end_date: 2022-04
+        end_date: 2022-01
         location: Remote
-        summary: Desktop and mobile app helping remote teams run structured async meetings with voice messages. Bootstrapped with 3 co-founders.
+        summary: Bootstrapped startup founded with three former Letgo
+          colleagues. Desktop and mobile app for asynchronous meetings over
+          voice notes, aimed at replacing daily stand-ups.
         highlights:
-          - Product design and strategy.
-          - Backend (Scala), desktop app (TypeScript) and AWS system administration.
-          - TODO one-line outcome. What shipped, users or pilot teams, why it closed, what you learned.
+          - Built the backend (Scala) and the desktop app (Electron,
+            TypeScript), and ran the AWS infrastructure, including voice-note
+            transcription with Amazon Transcribe.
+          - Reached about 100 sign-ups and 5 teams running their daily
+            stand-ups on it, with regular user interviews to steer the product.
+          - Pitched investors and wound the company down after 14 months
+            without funding or product-market fit.
       - company: Letgo
         position: Staff Engineer, Platform Team
         start_date: 2018-08
         end_date: 2020-10
         location: Remote
-        summary: Letgo was a B2C second-hand marketplace to buy and sell locally, focused on the US market.
+        summary: B2C second-hand marketplace for the US market that raised
+          about $1 billion and grew to 300+ employees. Proposed the platform
+          backend team to the CTO and moved into it, as one of three engineers.
         highlights:
-          - Designed the company backend scalability strategy. # TODO: what it covered and what it changed
-          - Dev operations. # TODO: which platforms/processes, which teams used them
-          - Mentoring and recruiting. # TODO: number of hires, processes
+          - Built the PHP and Scala libraries that every backend team used to
+            publish and consume domain events, standardizing how 40 engineers
+            integrated their services.
+          - Introduced service quality tracking across backend teams, covering
+            SLAs, downtime and test coverage.
+          - Built an explorer for every domain event in the company, used by
+            backend teams for debugging and by customer care to investigate
+            cases.
+          - Moved the company's event backbone from SNS and SQS to Kafka.
+          - Ran backend recruiting with the rest of the platform team. Hired
+            20+ engineers across both Letgo roles as the department grew to 40.
       - company: Letgo
         position: Team Lead, Chat Team
         start_date: 2015-10
         end_date: 2018-08
         location: Barcelona
         highlights:
-          - Grew the chat team from 1 to 10 engineers. # TODO: how many hired directly, promotions
-          - Built a chat system handling 100K+ concurrent users. # TODO: stack (Scala/Akka/Kafka/WebSockets?), messages/day, p99, availability, cost
+          - Built the new real-time chat in Scala and Akka (WebSockets,
+            MariaDB), which peaked at 130K+ concurrent users and handled over
+            4 billion messages.
+          - Migrated from the PHP chat with zero downtime, running both in
+            parallel for months and keeping them in sync through domain events
+            over SQS.
+          - Scaled it with Akka Cluster and archived older messages to
+            DynamoDB as volume grew.
+          - Led the company-wide move to an event-driven microservices
+            architecture. Every backend team adopted domain events (SNS, SQS)
+            and owned its own database, built from projections.
+          - Grew the team from 1 to a cross-functional squad of 8 and began
+            co-leading hiring for the backend department.
       - company: Akamon (2014–15), Atrápalo (2011–14) and others
         position: Earlier roles – Software Engineer
         date: 2010 – 2015
-        location: Barcelona
     talks:
       - bullet: "Microservices Anti-Patterns, Bilbostack 2020 ([slides, ES](https://es.slideshare.net/sergigp/otra-charla-de-microservicicios-bilbostack2020))"
       - bullet: "From Polling to Real Time, BCN Software Crafters 2017 ([slides, EN](https://es.slideshare.net/sergigp/from-polling-to-real-time-scala-akka-and-websockets-from-scratch-66626441))"
