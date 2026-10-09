@@ -1,5 +1,7 @@
-# RenderCV output
-rendercv_output/
+# RenderCV output: keep only PDF and Markdown
+rendercv_output/*
+!rendercv_output/*.pdf
+!rendercv_output/*.md
 
 # OS / editor
 .DS_Store

@@ -174,3 +174,8 @@ design:
 
 locale:
   language: english
+
+settings:
+  render_command:
+    dont_generate_html: true
+    dont_generate_png: true
