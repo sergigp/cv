@@ -59,7 +59,7 @@ Coralogix -- Remote
 
 Coralogix -- Remote
 
-*Promoted after one month to found and lead the dashboards team, acting as its engineering manager.*
+*Promoted shortly after joining the company to found and lead the dashboards team, acting as its engineering manager.*
 
 - Built custom dashboards, a Grafana-like product that became the platform's native alternative to Grafana for customers and replaced it company-wide for internal service monitoring.
 
