@@ -1,73 +1,66 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
-#
-# TODO markers: things you need to confirm or fill in. Search for "TODO".
-# Everything else is taken from the Canva CV + the review suggestions.
-
 cv:
   name: Sergi Gonzalez
-  headline: Senior/Staff Backend Engineer · Tech Lead | Distributed systems, observability, Rust & Scala, AI developer tooling
+  headline: Senior Backend Engineer · Team Lead
   location: Barcelona, Spain (CET) · EU citizen · Remote
   email: sergigp85@gmail.com
-  photo:
-  phone: # TODO: add phone (e.g. +34600000000) or leave empty
-  website: # TODO: personal site, if any
   social_networks:
     - network: LinkedIn
       username: sergigp
     - network: GitHub
       username: sergigp
-  custom_connections:
-    - placeholder: medium.com/@sergigp # TODO: keep only if blog is still relevant, or replace with personal site
-      url: https://medium.com/@sergigp
-      fontawesome_icon: medium
   sections:
     summary:
-      - Backend engineer and tech lead with 16 years building distributed systems for startups and scale-ups, 10 of them fully remote.
-        Grew two teams from 1 to 6 and 1 to 10 engineers; built a chat platform serving 100K+ concurrent users at Letgo and led the dashboards product at observability SaaS Coralogix.
-        Since 2025, building local-first AI developer tooling (Ollama/Qwen, MCP servers, spec-driven agent workflows) and contributing to open source.
-        Looking for staff or player-coach lead roles in backend, platform or AI-infrastructure teams.
+      - Product-minded backend engineer and team lead with 15+ years building
+        distributed systems for startups and scale-ups, remote since 2018.
+        Grew two teams from 1 to 6 and 1 to 10 engineers, built a chat platform
+        serving 100K+ concurrent users at Letgo, co-founded a startup, and owned
+        the dashboards product at observability SaaS Coralogix.
+        Works spec-first with AI coding agents (Claude Code, OpenSpec).
+        Looking for senior backend or team lead roles from January 2027.
     skills:
       - label: Languages
-        details: Rust, Scala (JVM/Java), TypeScript # TODO: Python only if defensible
+        details: Rust, Scala, TypeScript
       - label: Backend & Architecture
-        details: Distributed systems, event-driven architecture, Kafka, gRPC/Protobuf, microservices, DDD/CQRS, testing # TODO: confirm gRPC/Protobuf
+        details: Distributed systems, event-driven architecture, microservices, DDD/CQRS, Kafka, gRPC
       - label: Infrastructure & Observability
-        details: Kubernetes, AWS, Terraform, Prometheus & alerting, Grafana-style dashboards # TODO: add OpenTelemetry if used
+        details: Kubernetes, AWS, Terraform, Prometheus, Grafana
       - label: Data
-        details: Elasticsearch, DynamoDB, MySQL # TODO: keep only what a bullet backs; add PostgreSQL if true
-      - label: AI Engineering
-        details: Claude Code (skills, commands), MCP servers, OpenCode, Ollama/local inference (Qwen), spec-driven development (OpenSpec) # TODO: add evals/RAG only once you have an artefact
-      - label: Leadership
-        details: Hiring, team scaling (1→10), mentoring, product strategy
+        details: MySQL, PostgreSQL, Elasticsearch, DynamoDB
+      - label: AI-assisted development
+        details: Claude Code, Codex, spec-driven development
+      - label: Frontend (working knowledge)
+        details: Angular, React
     experience:
-      - company: Independent Engineering & Open Source
-        position: Sabbatical
-        start_date: 2025-12 # TODO: confirm start month
+      - company: Career break
+        position: Sabbatical and personal projects
+        start_date: 2026-01
         end_date: present
-        location: Barcelona / Remote
         highlights:
-          - Built a fully local AI coding stack (OpenCode + Ollama + Qwen models) to evaluate the cost, privacy and quality trade-offs of local vs hosted inference. # TODO: hardware, models, eval results
-          - Designed spec-first workflows for AI coding agents using OpenSpec. # TODO: result (fewer rework cycles, writeup link)
-          - Built Claude Code skills/commands and MCP servers for TODO. # TODO: what, stars/users/PRs merged
-          - Shipped a local-first macOS app combining RSS reading, LLM summarisation and TTS. # TODO: stack (Rust/Swift), link
-          - Open-source contributions to TODO. # TODO: projects, N merged PRs
-          - Parental leave (2026). Available from January 2027. # TODO: confirm wording and availability
+          - Planned break after Coralogix, including parental leave.
+          - Since August 2026, building [what] in [stack] with Claude Code and a
+            spec-driven workflow (OpenSpec). [repo link]
+      - company: Coralogix
+        position: Software Engineer
+        start_date: 2025-05
+        end_date: 2025-12
+        location: Remote
+        summary: TBD
+        highlights:
+          - TBD
       - company: Coralogix
         position: Team Lead
-        start_date: 2022-02 # TODO: confirm month (old CV: 2022-2025, 3y 9m)
-        end_date: 2025-11 # TODO: confirm month
+        start_date: 2022-04
+        end_date: 2025-05
         location: Remote
-        summary: Coralogix is a B2B SaaS offering a full observability platform for modern applications. Led the team owning the home dashboard and the custom dashboards product, a Grafana-like tool.
+        summary: Observability SaaS. Led the team building the home dashboard and custom dashboards, a Grafana-like product.
         highlights:
-          - Grew the dashboards team from 1 to 6 engineers. # TODO: hiring process, onboarding time, retention
-          - Owned product design and strategy for the dashboards product. # TODO: customers, dashboards/queries per day, latency, adoption
-          - Hands-on across backend (Scala), frontend (TypeScript) and operations (Kubernetes). # TODO: migrations, performance wins, cost reductions (%)
-          - TODO Kafka consumer-lag monitoring / Prometheus alerting / gRPC services, and the problem each solved.
-          - TODO Rust usage, AI tooling adoption or AI features shipped by the team, if any.
+          - Grew the dashboards team from 1 to 6 engineers.
+          - Main contributor to the team's backend services (Scala) and infrastructure (Kubernetes), with hands-on work in the Angular frontend.
+          - Ran the team with shared ownership across the stack, so frontend engineers also shipped backend changes. [one concrete result]
       - company: Cassette
         position: Co-Founder
-        start_date: 2020-11 # TODO: confirm (1y 2m vs "almost a year and a half" inconsistency in old CV)
-        end_date: 2022-01 # TODO: confirm
+        start_date: 2020-11
+        end_date: 2022-04
         location: Remote
         summary: Desktop and mobile app helping remote teams run structured async meetings with voice messages. Bootstrapped with 3 co-founders.
         highlights:
@@ -76,8 +69,8 @@ cv:
           - TODO one-line outcome. What shipped, users or pilot teams, why it closed, what you learned.
       - company: Letgo
         position: Staff Engineer, Platform Team
-        start_date: 2018-08 # TODO: confirm (old CV: 2y)
-        end_date: 2020-10 # TODO: confirm
+        start_date: 2018-08
+        end_date: 2020-10
         location: Remote
         summary: Letgo was a B2C second-hand marketplace to buy and sell locally, focused on the US market.
         highlights:
@@ -86,9 +79,9 @@ cv:
           - Mentoring and recruiting. # TODO: number of hires, processes
       - company: Letgo
         position: Team Lead, Chat Team
-        start_date: 2015-08 # TODO: confirm (old CV: 2015-20, 5y 2m total, 3y chat)
-        end_date: 2018-08 # TODO: confirm
-        location: Remote
+        start_date: 2015-10
+        end_date: 2018-08
+        location: Barcelona
         highlights:
           - Grew the chat team from 1 to 10 engineers. # TODO: how many hired directly, promotions
           - Built a chat system handling 100K+ concurrent users. # TODO: stack (Scala/Akka/Kafka/WebSockets?), messages/day, p99, availability, cost
@@ -96,11 +89,10 @@ cv:
         position: Earlier roles – Software Engineer
         date: 2010 – 2015
         location: Barcelona
-    Talks & Writing:
-      - label: Talks
-        details: 'Microservices Anti-Patterns — Bilbostack 2020 ([slides, ES](https://es.slideshare.net/sergigp/otra-charla-de-microservicicios-bilbostack2020)) · From Polling to Real Time — BCN Software Crafters 2017 ([slides, EN](https://es.slideshare.net/sergigp/from-polling-to-real-time-scala-akka-and-websockets-from-scratch-66626441)) · DDD as an Implementation Detail — PHP Barcelona 2015 ([slides, EN](https://es.slideshare.net/sergigp/php-barcelona-monthly-talk-feb-2015))'
-      - label: Writing
-        details: TODO 2025–26 posts (local AI coding stacks, spec-driven development), or drop this line
+    talks:
+      - bullet: "Microservices Anti-Patterns, Bilbostack 2020 ([slides, ES](https://es.slideshare.net/sergigp/otra-charla-de-microservicicios-bilbostack2020))"
+      - bullet: "From Polling to Real Time, BCN Software Crafters 2017 ([slides, EN](https://es.slideshare.net/sergigp/from-polling-to-real-time-scala-akka-and-websockets-from-scratch-66626441))"
+      - bullet: "DDD as an Implementation Detail, PHP Barcelona 2015 ([slides, EN](https://es.slideshare.net/sergigp/php-barcelona-monthly-talk-feb-2015))"
     education:
       - institution: Universitat Autònoma de Barcelona (UAB)
         area: Computer Science
@@ -112,7 +104,7 @@ cv:
       - label: Spanish
         details: Native
       - label: English
-        details: Professional (C1–C2) # TODO: confirm level
+        details: Fluent, led an international team in English (2022–2025)
 
 design:
   theme: engineeringresumes
@@ -135,8 +127,7 @@ design:
       show_icons: true
       display_urls_instead_of_usernames: true
   sections:
-    show_time_spans_in:
-      - experience
+    show_time_spans_in: []
 
 locale:
   language: english
