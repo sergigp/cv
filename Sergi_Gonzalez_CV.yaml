@@ -31,7 +31,7 @@ cv:
         end_date: present
         highlights:
           - Planned break after Coralogix, including parental leave.
-          - Built [Yarrtube](https://github.com/sergigp/yarrtube), an open-source self-hosted YouTube synchronizer (Rust, React, TypeScript), spec-first with Claude Code and OpenSpec. 140+ GitHub stars.
+          - Built [Yarrtube](https://github.com/sergigp/yarrtube), an open-source self-hosted YouTube synchronizer (Rust, React, TypeScript), spec-first with Claude Code and OpenSpec. 200+ GitHub stars.
           - Currently building [Superthree](https://github.com/sergigp/superthree), a self-hosted TV channel for kids where parents schedule what plays (TypeScript).
       - company: Coralogix
         position: Software Engineer, Data Usage Team
