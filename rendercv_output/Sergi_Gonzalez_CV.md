@@ -7,7 +7,7 @@
 
 
 # Summary
-Product-minded engineer and team lead with 15+ years building software for startups and scale-ups, remote since 2018. Grew two teams from scratch, built a chat platform serving 130K+ concurrent users at Letgo, co-founded a startup, and led an international team at Coralogix. Currently building open-source tools spec-first with AI coding agents. Open to remote senior backend or team lead roles from January 2027.
+Product-minded engineer and team lead with 15+ years building software for startups and scale-ups, remote since 2018. Grew two teams from scratch, built a chat platform serving 130K+ concurrent users at Letgo, co-founded a startup, and led an international team at Coralogix. Currently building open-source tools spec-first with AI coding agents. Open to remote senior software engineer or team lead roles from January 2027.
 
 # Skills
 **Languages:** Rust, Scala, TypeScript
